@@ -4,12 +4,72 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Background using :root */
+        :root {
+            --bg: rgb(135, 206, 235);
+        }
+
+        body {
+            background-color: var(--bg);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Article paragraph styling */
+        article p:first-child {
+            background: black;
+            color: white;
+        }
+
+        article p:nth-child(2) {
+            color: black;
+        }
+
+        article p:last-child {
+            color: red;
+        }
+
+        /* List styling */
+        ul li {
+            background: gray;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Odd items → white background */
+        ul li:nth-child(odd) {
+            background: white;
+        }
+
+        /* First and last item font size */
+        ul li:first-child,
+        ul li:last-child {
+            font-size: 22px;
+        }
+
+        /* Third-to-last item */
+        ul li:nth-last-child(3) {
+            background: pink;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <article>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+    </article>
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+        <li>List item 5</li>
+    </ul>
 
 </body>
 
